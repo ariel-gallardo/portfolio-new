@@ -1,0 +1,9 @@
+<section id="skills" class="skills-container" data-aos="fade-up">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div *ngFor="let skill of skills; let i = index" class="skill-item" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
+      <i [class]="skill.icon"></i>
+      <span>{{ skill.name }}</span>
+    </div>
+  </div>
+</section>

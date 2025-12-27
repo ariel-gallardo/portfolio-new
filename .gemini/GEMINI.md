@@ -23,7 +23,10 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - It MUST follow all WCAG AA minimums, including focus management, color contrast, and ARIA attributes.
 
 ### Components
-
+- Use Angular Material ^21.0.4
+- Use Material Icons ^21.0.4
+- Use current theme from styles.scss and use style classes from Material Angular version ^21.0.4
+- Use Angular Animations ^21.0.4
 - Keep components small and focused on a single responsibility
 - Use `input()` and `output()` functions instead of decorators
 - Use `computed()` for derived state

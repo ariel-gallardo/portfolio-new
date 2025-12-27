@@ -1,0 +1,25 @@
+<section id="contact" class="contact-container" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" rows="5"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">Send Message</button>
+  </form>
+  <div class="social-links">
+    <h3>Follow me on</h3>
+    <a href="https://github.com/ariel-gallardo" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ariel-alejandro-gallardo-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+</section>
+
